@@ -27,23 +27,15 @@ while i < 2:
     except ValueError:
         print("Invalid input. Please enter a valid number")
 
-# Checking work
-# print(path)
-
 # Set up rules for the key
 for x in alpha[shift:] + alpha[:shift]:
     key.append(x)
-
-# print(alpha)
-# print(key)
 
 # Combine the two lists to create the dictionary
 if path == [1]:
     cipher = dict(zip(alpha, key))
 else:
     cipher = dict(zip(key, alpha))
-
-# print(cipher)
 
 # Ask user for a sentence
 sentence = input("Please enter a sentence: ")
